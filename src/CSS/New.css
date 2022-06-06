@@ -1,0 +1,48 @@
+.new-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.new-h1{
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.new-subtitle{
+    margin: 0 auto;
+    font-weight: 300;
+    color: #b3b8c0;
+}
+
+.new-label{
+    margin: 1rem auto;
+}
+
+.new-option-input{
+    padding: .7em;
+    border: 1px solid #e1e5eb;
+    border-radius: 4px;
+}
+
+.new-submit{
+    margin: 1em auto 0;
+    width: 20vw;
+    padding: 0.4em 1.5em;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #e1e5eb;
+    text-decoration: none;
+    text-align: center;
+    color: #b3b8c0;
+    background-color: #fff;
+    transition: border-color 2s cubic-bezier(0.075, 0.82, 0.165, 1), color 2s cubic-bezier(0.075, 0.82, 0.165, 1), font-size 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.new-submit:hover{
+    border-color: #000;
+    color: #000;
+    font-size: 1.2rem;
+}

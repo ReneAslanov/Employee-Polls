@@ -1,0 +1,124 @@
+.poll-headline{
+    margin: 2rem auto 2em;
+    font-weight: 300;
+}
+
+.poll-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.poll-option{
+    margin: 0 auto 1em;
+    font-weight: 400;
+}
+
+.poll-options-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.poll-options{
+    border: 1px solid #e1e5eb;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+}
+
+.poll-option-text{
+    padding: 1em;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.2em;
+    border-bottom: 1px solid #e1e5eb;
+    background-color: #e1e5eb55;
+
+}
+
+.poll-button{
+    margin: 0 auto;
+    border-radius: 2px;
+    width: 100%;
+    padding: 0.7em;
+    background-color: #b06bff; /*  #9ef5ff  #bffdff  #00e5ff  #79e4e8  #c9b5ff  #dfd4ff  #f0e3ff  #b06bff  */
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.poll-button:hover{
+    background-color: #6f3bff;
+}
+
+.poll-options-done-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 65vh;
+    margin: 2rem auto;
+    border: 1px solid #e1e5eb;
+}
+
+.poll-option-votes{
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-weight: 200;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #e1e5eb;
+
+}
+
+.poll-option-perc{
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-weight: 200;
+    border-bottom: 1px solid #e1e5eb;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+.poll-piechart{
+    width: 20vw;
+    height: 20vh;
+    margin: 3rem auto;
+}
+
+.recharts-responsive-container{
+    display: flex;
+    margin: 1em auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.recharts-default-legend{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0;
+}
+
+.recharts-legend-item{
+    font-size: 1.2em;
+    font-weight: 200;
+
+}
+
+.recharts-legend-wrapper{
+    margin: 0 auto;
+    width: 100%;
+
+}

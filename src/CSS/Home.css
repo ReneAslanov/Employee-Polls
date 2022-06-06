@@ -1,0 +1,28 @@
+.home-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*border: 1px solid #e1e5eb;*/
+    margin: 2rem auto;
+    width: 80%;
+    height: 80%;
+}
+
+.home-h1-wrapper{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e1e5eb;
+    padding: 1em;
+}
+
+.home-h1-wrapper h1{
+    font-weight: 350;
+}
+
+.home-content-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #e1e5eb;
+    border-top: 0;
+    margin-bottom: 2rem;
+}

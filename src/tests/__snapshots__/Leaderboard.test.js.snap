@@ -1,0 +1,552 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Leaderboard should render the Leaderboard component properly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <div
+          class="nav-wrapper"
+        >
+          <div
+            class="nav-routes"
+          >
+            <ul
+              class="nav-list"
+            >
+              <a
+                href="/home"
+              >
+                Home
+              </a>
+              <a
+                href="/leaderboard"
+              >
+                Leaderboard
+              </a>
+              <a
+                href="/add"
+              >
+                New
+              </a>
+            </ul>
+          </div>
+          <div
+            class="nav-user"
+          >
+            <ul
+              class="nav-list"
+            >
+              <div
+                class="nav-img-wrapper"
+              >
+                <img
+                  alt="just an avatar"
+                  class="nav-avatar"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_juC_cG7iLmwAaK4Mxxy-OtJ52335hZfHhiS5eSHGp9a0C9OY67183F9TV4t01DNILs&usqp=CAU"
+                />
+              </div>
+              <p
+                class="nav-userName"
+              >
+                sarahedo
+              </p>
+              <a
+                href="/"
+              >
+                Logout
+              </a>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="leaderboard-wrapper"
+          data-testid="leaderboard-wrapper"
+        >
+          <div
+            class="leaderboard-head"
+          >
+            <div
+              class="leaderboard-users first-item"
+            >
+              Users
+            </div>
+            <div
+              class="leaderboard-users"
+            >
+              Answered
+            </div>
+            <div
+              class="leaderboard-users"
+            >
+              Created
+            </div>
+          </div>
+          <div
+            class="leaderboard-items-wrapper"
+          >
+            <div
+              class="leaderboard-user-name leaderboard-item"
+            >
+              <div
+                class="leaderboard-user-wrapper"
+              >
+                <h3
+                  class="leaderboard-userName"
+                >
+                  Sarah Edo
+                </h3>
+                <h4
+                  class="leaderboard-userId"
+                >
+                  sarahedo
+                </h4>
+              </div>
+              <div
+                class="leaderboard-userAvatar-wrapper"
+              >
+                <img
+                  alt="just an avatar"
+                  class="leaderboard-userAvatar"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_juC_cG7iLmwAaK4Mxxy-OtJ52335hZfHhiS5eSHGp9a0C9OY67183F9TV4t01DNILs&usqp=CAU"
+                />
+              </div>
+            </div>
+            <div
+              class="leaderboard-user-answers leaderboard-item"
+            >
+              4
+            </div>
+            <div
+              class="leaderboard-user-created leaderboard-item"
+            >
+              2
+            </div>
+          </div>
+          <div
+            class="leaderboard-items-wrapper"
+          >
+            <div
+              class="leaderboard-user-name leaderboard-item"
+            >
+              <div
+                class="leaderboard-user-wrapper"
+              >
+                <h3
+                  class="leaderboard-userName"
+                >
+                  Mike Tsamis
+                </h3>
+                <h4
+                  class="leaderboard-userId"
+                >
+                  mtsamis
+                </h4>
+              </div>
+              <div
+                class="leaderboard-userAvatar-wrapper"
+              >
+                <img
+                  alt="just an avatar"
+                  class="leaderboard-userAvatar"
+                  src="http://cdn.onlinewebfonts.com/svg/img_81879.png"
+                />
+              </div>
+            </div>
+            <div
+              class="leaderboard-user-answers leaderboard-item"
+            >
+              3
+            </div>
+            <div
+              class="leaderboard-user-created leaderboard-item"
+            >
+              2
+            </div>
+          </div>
+          <div
+            class="leaderboard-items-wrapper"
+          >
+            <div
+              class="leaderboard-user-name leaderboard-item"
+            >
+              <div
+                class="leaderboard-user-wrapper"
+              >
+                <h3
+                  class="leaderboard-userName"
+                >
+                  Tyler McGinnis
+                </h3>
+                <h4
+                  class="leaderboard-userId"
+                >
+                  tylermcginnis
+                </h4>
+              </div>
+              <div
+                class="leaderboard-userAvatar-wrapper"
+              >
+                <img
+                  alt="just an avatar"
+                  class="leaderboard-userAvatar"
+                  src="https://static.thenounproject.com/png/4035889-200.png"
+                />
+              </div>
+            </div>
+            <div
+              class="leaderboard-user-answers leaderboard-item"
+            >
+              2
+            </div>
+            <div
+              class="leaderboard-user-created leaderboard-item"
+            >
+              2
+            </div>
+          </div>
+          <div
+            class="leaderboard-items-wrapper"
+          >
+            <div
+              class="leaderboard-user-name leaderboard-item"
+            >
+              <div
+                class="leaderboard-user-wrapper"
+              >
+                <h3
+                  class="leaderboard-userName"
+                >
+                  Zenobia Oshikanlu
+                </h3>
+                <h4
+                  class="leaderboard-userId"
+                >
+                  zoshikanlu
+                </h4>
+              </div>
+              <div
+                class="leaderboard-userAvatar-wrapper"
+              >
+                <img
+                  alt="just an avatar"
+                  class="leaderboard-userAvatar"
+                  src="https://www.seekpng.com/png/detail/514-5147366_default-avatar-comments-avatar.png"
+                />
+              </div>
+            </div>
+            <div
+              class="leaderboard-user-answers leaderboard-item"
+            >
+              1
+            </div>
+            <div
+              class="leaderboard-user-created leaderboard-item"
+            >
+              0
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        class="nav-wrapper"
+      >
+        <div
+          class="nav-routes"
+        >
+          <ul
+            class="nav-list"
+          >
+            <a
+              href="/home"
+            >
+              Home
+            </a>
+            <a
+              href="/leaderboard"
+            >
+              Leaderboard
+            </a>
+            <a
+              href="/add"
+            >
+              New
+            </a>
+          </ul>
+        </div>
+        <div
+          class="nav-user"
+        >
+          <ul
+            class="nav-list"
+          >
+            <div
+              class="nav-img-wrapper"
+            >
+              <img
+                alt="just an avatar"
+                class="nav-avatar"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_juC_cG7iLmwAaK4Mxxy-OtJ52335hZfHhiS5eSHGp9a0C9OY67183F9TV4t01DNILs&usqp=CAU"
+              />
+            </div>
+            <p
+              class="nav-userName"
+            >
+              sarahedo
+            </p>
+            <a
+              href="/"
+            >
+              Logout
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="leaderboard-wrapper"
+        data-testid="leaderboard-wrapper"
+      >
+        <div
+          class="leaderboard-head"
+        >
+          <div
+            class="leaderboard-users first-item"
+          >
+            Users
+          </div>
+          <div
+            class="leaderboard-users"
+          >
+            Answered
+          </div>
+          <div
+            class="leaderboard-users"
+          >
+            Created
+          </div>
+        </div>
+        <div
+          class="leaderboard-items-wrapper"
+        >
+          <div
+            class="leaderboard-user-name leaderboard-item"
+          >
+            <div
+              class="leaderboard-user-wrapper"
+            >
+              <h3
+                class="leaderboard-userName"
+              >
+                Sarah Edo
+              </h3>
+              <h4
+                class="leaderboard-userId"
+              >
+                sarahedo
+              </h4>
+            </div>
+            <div
+              class="leaderboard-userAvatar-wrapper"
+            >
+              <img
+                alt="just an avatar"
+                class="leaderboard-userAvatar"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_juC_cG7iLmwAaK4Mxxy-OtJ52335hZfHhiS5eSHGp9a0C9OY67183F9TV4t01DNILs&usqp=CAU"
+              />
+            </div>
+          </div>
+          <div
+            class="leaderboard-user-answers leaderboard-item"
+          >
+            4
+          </div>
+          <div
+            class="leaderboard-user-created leaderboard-item"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="leaderboard-items-wrapper"
+        >
+          <div
+            class="leaderboard-user-name leaderboard-item"
+          >
+            <div
+              class="leaderboard-user-wrapper"
+            >
+              <h3
+                class="leaderboard-userName"
+              >
+                Mike Tsamis
+              </h3>
+              <h4
+                class="leaderboard-userId"
+              >
+                mtsamis
+              </h4>
+            </div>
+            <div
+              class="leaderboard-userAvatar-wrapper"
+            >
+              <img
+                alt="just an avatar"
+                class="leaderboard-userAvatar"
+                src="http://cdn.onlinewebfonts.com/svg/img_81879.png"
+              />
+            </div>
+          </div>
+          <div
+            class="leaderboard-user-answers leaderboard-item"
+          >
+            3
+          </div>
+          <div
+            class="leaderboard-user-created leaderboard-item"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="leaderboard-items-wrapper"
+        >
+          <div
+            class="leaderboard-user-name leaderboard-item"
+          >
+            <div
+              class="leaderboard-user-wrapper"
+            >
+              <h3
+                class="leaderboard-userName"
+              >
+                Tyler McGinnis
+              </h3>
+              <h4
+                class="leaderboard-userId"
+              >
+                tylermcginnis
+              </h4>
+            </div>
+            <div
+              class="leaderboard-userAvatar-wrapper"
+            >
+              <img
+                alt="just an avatar"
+                class="leaderboard-userAvatar"
+                src="https://static.thenounproject.com/png/4035889-200.png"
+              />
+            </div>
+          </div>
+          <div
+            class="leaderboard-user-answers leaderboard-item"
+          >
+            2
+          </div>
+          <div
+            class="leaderboard-user-created leaderboard-item"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="leaderboard-items-wrapper"
+        >
+          <div
+            class="leaderboard-user-name leaderboard-item"
+          >
+            <div
+              class="leaderboard-user-wrapper"
+            >
+              <h3
+                class="leaderboard-userName"
+              >
+                Zenobia Oshikanlu
+              </h3>
+              <h4
+                class="leaderboard-userId"
+              >
+                zoshikanlu
+              </h4>
+            </div>
+            <div
+              class="leaderboard-userAvatar-wrapper"
+            >
+              <img
+                alt="just an avatar"
+                class="leaderboard-userAvatar"
+                src="https://www.seekpng.com/png/detail/514-5147366_default-avatar-comments-avatar.png"
+              />
+            </div>
+          </div>
+          <div
+            class="leaderboard-user-answers leaderboard-item"
+          >
+            1
+          </div>
+          <div
+            class="leaderboard-user-created leaderboard-item"
+          >
+            0
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

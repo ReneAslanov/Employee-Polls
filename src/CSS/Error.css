@@ -1,0 +1,30 @@
+.error-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 2rem auto;
+    border: 1px solid #e1e5eb;
+    padding-bottom: 2em;
+}
+
+.error-header{
+    font-size: 1.3rem;
+    justify-content: center;
+    margin: 2em auto;
+    font-weight: 200;
+}
+
+.error-button{
+    margin: 0 auto;
+    text-decoration: none;
+    color: #b3b8c0;
+    padding: 1em 1.2em;
+    border: 1px solid #e1e5eb;
+    transition: color 1s cubic-bezier(0.215, 0.610, 0.355, 1), font-size 1s, border-color 2s;
+}
+
+.error-button:hover{
+    color: #000;
+    font-size: 1.5rem;
+    border-color: #000;
+}
