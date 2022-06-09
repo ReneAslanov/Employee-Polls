@@ -1,15 +1,22 @@
-import { connect} from "react-redux";
+import { connect, useDispatch} from "react-redux";
 import Nav from "./Nav";
 import "../CSS/Leaderboard.css";
 import LeaderboardCard from "./Leaderboard-Card";
-import ErrorPage from "./ErrorPage";
+import Login from "./Login";
+import { useLocation } from "react-router-dom";
+import { setLocation } from "../actions/shared";
 
 function Leaderboard(props)
 {
+    const location = useLocation();
+    const dispatch = useDispatch();
+
     if(props.authedUser === null)
     {
+        dispatch(setLocation(location.pathname));
+
         return(
-            <ErrorPage/>
+            <Login/>
         )
     }
 
