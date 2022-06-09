@@ -1,12 +1,16 @@
 import { Link , useNavigate} from "react-router-dom";
 import "../CSS/Nav.css";
-import { connect } from "react-redux";
+import { connect, useDispatch } from "react-redux";
+import { setLocation } from "../actions/shared";
 
-function Nav(props)
+function Nav({authedUser})
 {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+
     function logout()
     {
+        dispatch(setLocation(null))
         navigate("/");
     }
 
@@ -22,10 +26,10 @@ function Nav(props)
             <div className="nav-user">
                 <ul className="nav-list">
                     <div className="nav-img-wrapper">
-                        <img src={props.authedUser.avatar} alt="just an avatar" className="nav-avatar"/>
+                        <img src={authedUser.avatar} alt="just an avatar" className="nav-avatar"/>
                     </div>
                     <p className="nav-userName">
-                        {props.authedUser.id}
+                        {authedUser.id}
                     </p>
                     <Link to="/" onClick={logout}>Logout</Link>
                 </ul>
