@@ -1,16 +1,22 @@
 import "../CSS/Home.css";
 import Card from "./Card";
 import Nav from "./Nav";
-import { connect } from "react-redux";
-import ErrorPage from "./ErrorPage";
+import { connect, useDispatch } from "react-redux";
+import { useLocation } from "react-router-dom";
+import { setLocation } from "../actions/shared";
+import Login from "./Login";
 
 function Home(props)
 {
+    const dispatch = useDispatch();
+    const location = useLocation();
 
     if(props.authedUser === null)
     {
+        dispatch(setLocation(location.pathname));
+
         return(
-            <ErrorPage />
+            <Login />
         )
     }
 
@@ -78,7 +84,7 @@ function mapStateToProps({authedUser, questions})
     return{
         answers: authedUser.answers !== null ? Object.keys(authedUser.answers) : null,
         questions: questions.sort((a, b) => {
-            return a.timestamp - b.timestamp
+            return b.timestamp - a.timestamp
         })
     }
 }
