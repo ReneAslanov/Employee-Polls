@@ -1,14 +1,43 @@
-import { Link } from "react-router-dom";
+import { connect, useDispatch } from "react-redux";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../CSS/Error.css";
+import { setLocation } from "../actions/shared";
+import Login from "./Login";
 
-function ErrorPage()
+function ErrorPage({authedUser})
 {
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const location = useLocation();
+
+    if(authedUser === null)
+    {
+        dispatch(setLocation(location.pathname));
+
+        return(
+            <Login />
+        )
+    }
+
+    function toHome()
+    {
+        dispatch(setLocation(location.pathname));
+        setTimeout(navigate, 1000, "/home");
+    }
+
     return(
         <div className="error-wrapper">
-            <h1 className="error-header">This URL does not exist or you are not logged in</h1>
-            <Link to={"/"} className="error-button">Back To Login</Link>
+            <h1 className="error-header">This URL does not exist</h1>
+            <Link to={"/home"} className="error-button" onClick={toHome}>Back To Homepage</Link>
         </div>
     )
 }
 
-export default ErrorPage;
+function mapStateToProps({authedUser})
+{
+    return{
+        authedUser
+    }
+}
+
+export default connect(mapStateToProps)(ErrorPage);
