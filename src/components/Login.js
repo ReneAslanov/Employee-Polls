@@ -2,12 +2,25 @@ import "../CSS/Login.css"
 import { Link, useNavigate } from "react-router-dom";
 import {logoutUser, setAuthedUser} from "../actions/authedUser";
 import {connect, useDispatch} from "react-redux";
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import { setLocation } from "../actions/shared";
+import PropTypes from "prop-types";
+import ErrorPage from "./ErrorPage";
 
-function Login(props)
+function Login({users, questions, location})
 {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const [validLocations, setValidLocations] = useState(["/home", "/leaderboard", "/add", "/"].concat(questions.map(question => {
+        return `/question/${question.id}`;
+    })))
+
+    useEffect(() => {
+        setValidLocations(["/home", "/leaderboard", "/add", "/"].concat(questions.map(question => {
+            return `/question/${question.id}`;
+        })))
+    }, [questions])
+
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
@@ -15,10 +28,24 @@ function Login(props)
     {
         e.preventDefault();
 
-        const isUser = props.users.find(obj => {
+        const isUser = users.find(obj => {
             if(obj.name === username && obj.password === password)
             {
                 dispatch(setAuthedUser(obj));
+                if(location !== null && validLocations.includes(location))
+                {
+                    navigate(location);
+                    dispatch(setLocation(null))
+                    return true;
+                }
+                if(location !== null)
+                {
+                    dispatch(setLocation(null))
+                    return(
+                        <ErrorPage />
+                    )
+                }
+
                 navigate("/home");
                 return true;
             }
@@ -45,17 +72,23 @@ function Login(props)
                 <input type="password" placeholder="Password" name="Password" id="password" data-testid="password" className="login-input" onChange={event => setPassword(event.target.value.trim())}></input>
             </div>
 
-
             <Link to="/home" className="login-submit" onClick={validUser} id="home-link">submit</Link>
         </form>
     )
 }
 
-function mapStateToProps({users, questions})
+Login.propTypes = {
+    users: PropTypes.array,
+    questions: PropTypes.array,
+    location: PropTypes.string
+}
+
+function mapStateToProps({users, questions, location})
 {
     return{
         users: Object.values(users),
-        questions
+        questions,
+        location
     }
 }
 
