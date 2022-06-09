@@ -1,6 +1,7 @@
 export const RECEIVE_USERS = "RECEIVE_USERS";
 export const SET_POLL_ANSWER = "SET_POLL_ANSWER";
 export const SET_QUESTION_ARRAY = "SET_QUESTION_ARRAY";
+export const SET_LOCATION = "SET_LOCATION";
 
 export function setUserAnswer({authedUser, qid, answer})
 {
@@ -27,4 +28,12 @@ export function receiveUsers(payload)
         type: RECEIVE_USERS,
         users: payload
     }
+}
+
+export function setLocation(location)
+{
+  return{
+    type: SET_LOCATION,
+    location
+  }
 }
