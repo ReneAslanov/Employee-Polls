@@ -5,8 +5,8 @@ import "../CSS/Poll.css";
 import { handleQuestionAnswer } from "../actions/questions";
 import { setPollOption } from "../actions/authedUser";
 import { PieChart, Pie, ResponsiveContainer, Legend } from "recharts";
-import { setUserAnswer } from "../actions/shared";
-import ErrorPage from "./ErrorPage";
+import { setLocation, setUserAnswer } from "../actions/shared";
+import Login from "./Login";
 
 
 const withRouter = (Component) => {
@@ -24,11 +24,14 @@ function Poll(props)
 {
     const dispatch = useDispatch();
     let navigate = useNavigate();
+    const location = useLocation();
 
     if(props.authedUser === null)
     {
+        dispatch(setLocation(location.pathname));
+
         return(
-            <ErrorPage/>
+            <Login />
         )
     }
 
