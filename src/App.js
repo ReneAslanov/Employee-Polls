@@ -15,7 +15,6 @@ import ErrorPage from './components/ErrorPage';
 function App() {
 
   const dispatch = useDispatch();
-
   function handleInitialData()
   {
     _getQuestions().then(data => dispatch(setQuestions(data)));
@@ -29,12 +28,12 @@ function App() {
   return (
     <Fragment>
       <Routes>
-        <Route path='/home' element={<Home/>} />
-        <Route exact path='/' element={<Login/>} />
+        <Route path='/home' element={<Home />} />
+        <Route exact path='/' element={<Login />} />
         <Route path='/add' element={<New />} />
-        <Route path='/question/:id' element={<Poll/>}/>
-        <Route path='/leaderboard' element={<Leaderboard />}/>
-        <Route path='*' element={<ErrorPage />}/>
+        <Route path='/question/:id' element={<Poll />} />
+        <Route path='/leaderboard' element={<Leaderboard />} />
+        <Route path='*' element={<ErrorPage />} />
       </Routes>
     </Fragment>
   );
