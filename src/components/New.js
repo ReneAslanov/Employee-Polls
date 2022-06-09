@@ -1,23 +1,26 @@
 import Nav from "./Nav";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../CSS/New.css";
 import { connect, useDispatch } from "react-redux";
 import {useNavigate} from "react-router-dom";
 import { createQuestion } from "../actions/questions";
 import { _saveQuestion } from "../utils/_DATA";
 import { handleCreateQuestion } from "../actions/questions";
-import {setUserQuestionArray} from "../actions/shared"
-import ErrorPage from "./ErrorPage";
+import {setLocation, setUserQuestionArray} from "../actions/shared"
+import Login from "./Login";
 
-function New(props)
+function New({authedUser})
 {
     const navigate = useNavigate();
     const dispatch = useDispatch();
+    const location = useLocation();
 
-    if(props.authedUser === null)
+    if(authedUser === null)
     {
+        dispatch(setLocation(location.pathname));
+
         return(
-            <ErrorPage/>
+            <Login />
         )
     }
 
@@ -32,7 +35,7 @@ function New(props)
         {
             return alert("please provide both options");
         }
-        _saveQuestion(handleCreateQuestion(optionOne, optionTwo, props.authedUser.id))
+        _saveQuestion(handleCreateQuestion(optionOne, optionTwo, authedUser.id))
         .then(actualQuestion => {
             dispatch(setUserQuestionArray({
                 authedUser: actualQuestion.author,
