@@ -5,7 +5,6 @@ import {connect, useDispatch} from "react-redux";
 import {useEffect, useState} from "react";
 import { setLocation } from "../actions/shared";
 import PropTypes from "prop-types";
-import ErrorPage from "./ErrorPage";
 
 function Login({users, questions, location})
 {
@@ -41,9 +40,8 @@ function Login({users, questions, location})
                 if(location !== null)
                 {
                     dispatch(setLocation(null))
-                    return(
-                        <ErrorPage />
-                    )
+                    navigate("*");
+                    return true
                 }
 
                 navigate("/home");
